@@ -8,7 +8,7 @@ function ImageComponent({images}) {
                     <div className=" item-images">
                         {images.map((item , i) => {
                             return (
-                                <img alt=""
+                                <img alt="image"
                                      src={item}
                                      width="50"
                                      onClick={() => setPreviewImageIndex(i)}
@@ -22,7 +22,7 @@ function ImageComponent({images}) {
                 <div className="flex-fill preview">
 
                     <img
-                        alt=""
+                        alt="image preview"
                         className=""
                         src={images[previewImageIndex]}
                     />

@@ -53,7 +53,7 @@ a {
 .preview {
   position: relative;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   flex-direction: row;
 }
 

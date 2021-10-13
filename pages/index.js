@@ -1,5 +1,4 @@
-import Head from 'next/head'
-import Image from 'next/image'
+
 import ImageComponent from "../components/ImageComponent";
 import Details from "../components/Details";
 

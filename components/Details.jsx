@@ -17,7 +17,7 @@ function Details({data}) {
                    </div>
                    <div className="avatar d-flex">
                        <span className="name details-title">Xels trends</span>
-                       <span><img src={"/images/bg2.jpg"}/></span>
+                       <span><img alt="Xels profile" src={"/images/bg2.jpg"}/></span>
                    </div>
                </div>
 
