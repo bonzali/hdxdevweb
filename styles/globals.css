@@ -1,9 +1,14 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
+  padding: 0 ;
+  margin: 0 !important;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+*{
+  padding: 0 ;
+  margin: 0 ;
 }
 
 a {
@@ -13,4 +18,152 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.main {
+  padding-top: 50px;
+  background-color: #1a202c ;
+  min-height : 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.main .content {
+  max-width: 80rem;
+}
+
+/*ImageComponent*/
+.item-images  {
+  width: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+.item-images img {
+  margin-bottom: 8px;
+  opacity: 0.4;
+  transition: all .5s;
+}
+.item-images img.active {
+  opacity: 1;
+}
+.preview {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+}
+
+.preview img {
+  object-fit: cover;
+  width: 83%;
+  height: 500px;
+  z-index: 20;
+  transition: all .5s;
+
+}
+
+.preview .img-border {
+   position: absolute;
+   width: 83%;
+   height: 500px;
+   border: 1px solid white;
+   left: 22px;
+   top: 22px ;
+}
+
+
+/*Details Component */
+.Details {
+  color: white;
+}
+.item-name {
+  font-size: calc(1.275rem + 0.6vw);
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.avatar {
+  width: 150px;
+}
+
+.avatar .name {
+  margin-right: 10px;
+  margin-top: 2px;
+
+}
+
+.Details .avatar img {
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+}
+
+
+.item-details span {
+  position: relative;
+  padding-right: 15px;
+}
+.item-details span:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+  background-color: white;
+  z-index: 1;
+}
+
+
+.item-colors div {
+  width:  25px ;
+  height: 25px;
+  border : 1px solid transparent;
+  border-radius: 50%;
+  margin-right: 10px;
+  padding: 2px;
+  transition: all .5s;
+}
+
+.item-colors div.active {
+  border-color: gray;
+}
+.item-colors div > div {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+
+}
+
+
+.details-title {
+  font-size: 14px;
+}
+.details-title span {
+  margin-right: 20px;
+}
+
+
+.item-sizes div {
+  margin-right: 10px;
+  font-size: 12px;
+  border-radius: 22px;
+  min-width: 33px;
+  border : 1px solid gray;
+ text-align: center;
+  transition: all .5s;
+
+}
+.item-sizes div.active {
+  background-color: #24b7ad;
+}
+
+.item-options {
+  border : 1px solid gray;
+  width: 300px;
 }
